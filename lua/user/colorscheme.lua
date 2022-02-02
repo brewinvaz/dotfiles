@@ -1,3 +1,4 @@
+--Make background transparent, if theme is installed
 vim.cmd [[
 try
   colorscheme NeoSolarized
