@@ -31,21 +31,10 @@ local mode = {
 	end,
 }
 
-local filetype = {
-	"filetype",
-	icons_enabled = false,
-	icon = nil,
-}
-
 local branch = {
 	"branch",
 	icons_enabled = true,
 	icon = "",
-}
-
-local location = {
-	"location",
-	padding = 0,
 }
 
 -- cool function for progress
@@ -75,9 +64,9 @@ lualine.setup({
 		lualine_a = { mode },
 		lualine_b = { branch, diff, diagnostics },
 		lualine_c = { "filename" },
-		lualine_x = { spaces, "encoding", "fileformat", filetype },
+		lualine_x = { spaces, "encoding", "fileformat", "filetype" },
 		lualine_y = { progress },
-		lualine_z = { location },
+		lualine_z = { "location" },
 	},
 	inactive_sections = {
 		lualine_a = {},
