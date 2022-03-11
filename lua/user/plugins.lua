@@ -67,7 +67,10 @@ return packer.startup(function(use)
 			"MunifTanjim/nui.nvim",
 		},
 	})
-
+	use({
+		"folke/trouble.nvim",
+		requires = "kyazdani42/nvim-web-devicons",
+	})
 	-- Colorschemes
 	-- use "lunarvim/colorschemes" -- A bunch of colorschemes you can try out
 	-- use "lunarvim/darkplus.nvim"
