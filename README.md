@@ -1,5 +1,7 @@
 # Setup Notes
 
+This repo builds on Christian Chiarulli's [Repo](https://github.com/LunarVim/Neovim-from-scratch)
+
 **NOTE** (You will notice treesitter pulling in a bunch of parsers the next time you open Neovim) 
 
 ## Get healthy
