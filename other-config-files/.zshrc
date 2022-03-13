@@ -82,7 +82,7 @@ ZSH_THEME="powerlevel10k/powerlevel10k"
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git tmux zsh-syntax-highlighting zsh-autosuggestions)
+plugins=(git tmux zsh-syntax-highlighting zsh-autosuggestions vi-mode)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -126,6 +126,10 @@ export PATH="/opt/homebrew/opt/openssl@3/bin:$PATH"
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+
+# nnn config
+export NNN_PLUG="f:finder;o:fzopen;p:mocplay;d:diffs;t:nmount;v:preview-tui"
+export NNN_FIFO="/tmp/nnn.fifo"
 
 #### FIG ENV VARIABLES ####
 # Please make sure this block is at the end of this file.
