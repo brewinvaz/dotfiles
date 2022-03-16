@@ -1,0 +1,110 @@
+# Config Guide: https://github.com/tmcdonell/config-alacritty/blob/master/alacritty.yml
+
+env:
+  TERM: xterm-256color
+
+window:
+  dimensions:
+    columns: 330
+    lines: 85
+
+  padding:
+    x: 0
+    y: 0
+
+  decorations: buttonless
+
+  startup_mode: Maximized
+
+  opacity: 0.97
+
+scrolling:
+  history: 0
+
+  multiplier: 3
+
+font:
+  normal:
+    family: FiraCode Nerd Font
+    style: Retina
+
+  bold:
+    family: FiraCode Nerd Font
+    style: Retina
+
+  italic:
+    family: FiraCode Nerd Font
+    style: Retina
+
+  size: 12.5
+
+  offset:
+    x: 0
+    y: 0
+
+  glyph_offset:
+    x: 0
+    y: 0
+
+  use_thin_strokes: false
+
+draw_bold_text_with_bright_colors: false
+
+dpi:
+  x: 128.0
+  y: 128.0
+
+# Should display the render timer
+debug.render_timer: false
+
+custom_cursor_colors: true
+
+colors:
+  primary:
+    background: '#2e3440'
+    foreground: '#d8dee9'
+    dim_foreground: '#a5abb6'
+  cursor:
+    text: "0x4c566a"
+    cursor: "0x8fbcbb"
+  vi_mode_cursor:
+    text: '#2e3440'
+    cursor: '#d8dee9'
+  selection:
+    text: CellForeground
+    background: '#4c566a'
+  search:
+    matches:
+      foreground: CellBackground
+      background: '#88c0d0'
+    bar:
+      background: '#434c5e'
+      foreground: '#d8dee9'
+  normal:
+    black: '#3b4252'
+    red: '#bf616a'
+    green: '#a3be8c'
+    yellow: '#ebcb8b'
+    blue: '#81a1c1'
+    magenta: '#b48ead'
+    cyan: '#88c0d0'
+    white: '#e5e9f0'
+  bright:
+    black: '#4c566a'
+    red: '#bf616a'
+    green: '#a3be8c'
+    yellow: '#ebcb8b'
+    blue: '#81a1c1'
+    magenta: '#b48ead'
+    cyan: '#8fbcbb'
+    white: '#eceff4'
+  dim:
+    black: '#373e4d'
+    red: '#94545d'
+    green: '#809575'
+    yellow: '#b29e75'
+    blue: '#68809a'
+    magenta: '#8c738c'
+    cyan: '#6d96a5'
+    white: '#aeb3bb'
+
