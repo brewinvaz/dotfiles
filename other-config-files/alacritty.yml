@@ -16,7 +16,7 @@ window:
 
   startup_mode: Maximized
 
-  opacity: 0.97
+  opacity: 0.98
 
 scrolling:
   history: 0
@@ -54,7 +54,6 @@ dpi:
   x: 128.0
   y: 128.0
 
-# Should display the render timer
 debug.render_timer: false
 
 custom_cursor_colors: true
@@ -108,3 +107,17 @@ colors:
     cyan: '#6d96a5'
     white: '#aeb3bb'
 
+mouse:
+  # Click settings
+  #
+  # The `double_click` and `triple_click` settings control the time
+  # alacritty should wait for accepting multiple clicks as one double
+  # or triple click.
+  double_click: { threshold: 300 }
+  triple_click: { threshold: 300 }
+
+  # If this is `true`, the cursor is temporarily hidden when typing.
+  hide_when_typing: true
+    #
+# Live config reload (changes require restart)
+live_config_reload: true
