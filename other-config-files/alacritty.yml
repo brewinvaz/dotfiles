@@ -9,8 +9,8 @@ window:
     lines: 85
 
   padding:
-    x: 0
-    y: 0
+    x: 4
+    y: 4
 
   decorations: buttonless
 
@@ -46,6 +46,8 @@ font:
     x: 0
     y: 0
 
+  scale_with_dpi: true
+    
   use_thin_strokes: false
 
 draw_bold_text_with_bright_colors: false
