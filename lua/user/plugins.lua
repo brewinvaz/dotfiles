@@ -77,6 +77,8 @@ return packer.startup(function(use)
 			require("surround").setup({ mappings_style = "sandwich" })
 		end,
 	})
+  use({"tomlion/vim-solidity"})
+
 	-- Colorschemes
 	-- use "lunarvim/colorschemes" -- A bunch of colorschemes you can try out
 	-- use "lunarvim/darkplus.nvim"
