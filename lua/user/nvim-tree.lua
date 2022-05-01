@@ -44,6 +44,7 @@ vim.g.show_icons = {
 	folder_arrows = 1,
 	tree_width = 30,
 }
+vim.g.nvim_tree_group_empty = 1
 
 nvim_tree.setup({
 	disable_netrw = true,
