@@ -77,7 +77,7 @@ return packer.startup(function(use)
 			require("surround").setup({ mappings_style = "sandwich" })
 		end,
 	})
-  use({"tomlion/vim-solidity"})
+	use("tomlion/vim-solidity")
 
 	-- Colorschemes
 	-- use "lunarvim/colorschemes" -- A bunch of colorschemes you can try out
@@ -92,6 +92,11 @@ return packer.startup(function(use)
 	use("hrsh7th/cmp-cmdline") -- cmdline completions
 	use("saadparwaiz1/cmp_luasnip") -- snippet completions
 	use("hrsh7th/cmp-nvim-lsp")
+	use({
+		"tzachar/cmp-tabnine",
+		run = "./install.sh",
+		requires = "hrsh7th/nvim-cmp",
+	}) -- tabnine AI completions
 
 	-- Snippets
 	use("L3MON4D3/LuaSnip") --snippet engine
