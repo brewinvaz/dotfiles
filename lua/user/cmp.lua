@@ -59,6 +59,7 @@ tabnine:setup({
   ignored_file_types = { -- default is not to ignore
     -- uncomment to ignore in lua:
     -- lua = true
+    elixir = true
   },
   show_prediction_strength = true,
 })
