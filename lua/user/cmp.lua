@@ -60,7 +60,8 @@ tabnine:setup({
     -- uncomment to ignore in lua:
     -- lua = true
     elixir = true,
-    python = true
+    python = true,
+    ruby = true
   },
   show_prediction_strength = true,
 })
