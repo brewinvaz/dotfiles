@@ -58,7 +58,9 @@ return packer.startup(function(use)
 	use("goolord/alpha-nvim")
 	use("antoinemadec/FixCursorHold.nvim") -- This is needed to fix lsp doc highlight
 	use("folke/which-key.nvim")
-  use({'scalameta/nvim-metals', requires = { "nvim-lua/plenary.nvim" }})
+	use({ "scalameta/nvim-metals", requires = { "nvim-lua/plenary.nvim" } })
+	use({ "ur4ltz/surround.nvim" })
+	use({ "wfxr/minimap.vim" })
 
 	-- Trial plugins
 	use({
@@ -71,12 +73,6 @@ return packer.startup(function(use)
 	use({
 		"folke/trouble.nvim",
 		requires = "kyazdani42/nvim-web-devicons",
-	})
-	use({
-		"ur4ltz/surround.nvim",
-		config = function()
-			require("surround").setup({ mappings_style = "sandwich" })
-		end,
 	})
 	use("tomlion/vim-solidity")
 
