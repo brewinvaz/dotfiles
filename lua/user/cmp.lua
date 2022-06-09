@@ -61,7 +61,8 @@ tabnine:setup({
     -- lua = true
     elixir = true,
     python = true,
-    ruby = true
+    ruby = true,
+    eruby = true,
   },
   show_prediction_strength = true,
 })
