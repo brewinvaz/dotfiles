@@ -36,7 +36,9 @@ local options = {
   guifont = "monospace:h17",               -- the font used in graphical neovim applications
 }
 
-vim.opt.shortmess:append "c"
+vim.opt.shortmess:append("c")
+-- Show autocmd events associated with filetypes, 'F' turns on silent mode
+vim.opt.shortmess:remove("F")
 
 for k, v in pairs(options) do
   vim.opt[k] = v

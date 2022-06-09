@@ -33,7 +33,14 @@ vim.cmd [[
     autocmd!
     autocmd BufEnter,FocusGained,InsertLeave,WinEnter * if &nu && mode() != "i" | set rnu   | endif
     autocmd BufLeave,FocusLost,InsertEnter,WinLeave   * if &nu                  | set nornu | endif
-  augroup END
+  augroup end
+
+  augroup _lsp
+    autocmd!
+    autocmd FileType scala setlocal omnifunc=v:lua.vim.lsp.omnifunc
+    " metals_config is defined in metals.lua
+    autocmd FileType scala,sbt lua require("metals").initialize_or_attach(metals_config)
+  augroup end
 ]]
 
 -- Autoformat
