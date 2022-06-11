@@ -94,6 +94,7 @@ nvim_tree.setup({
   },
   renderer = {
     group_empty = true,
+    full_name = true,
     icons = {
       glyphs = {
         default = "",
