@@ -64,13 +64,6 @@ return packer.startup(function(use)
 
 	-- Trial plugins
 	use({
-		"bennypowers/nvim-regexplainer",
-		requires = {
-			"nvim-lua/plenary.nvim",
-			"MunifTanjim/nui.nvim",
-		},
-	})
-	use({
 		"folke/trouble.nvim",
 		requires = "kyazdani42/nvim-web-devicons",
 	})
