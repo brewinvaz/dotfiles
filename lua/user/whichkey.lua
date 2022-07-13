@@ -131,6 +131,7 @@ local mappings = {
   l = {
     name = "LSP",
     a = { "<cmd>lua vim.lsp.buf.code_action()<cr>", "Code Action" },
+    A = { "<cmd>AerialToggle!<cr>", "Open Aerial" },
     d = {
       "<cmd>Trouble document_diagnostics<cr>",
       "Document Diagnostics",

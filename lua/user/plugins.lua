@@ -68,6 +68,7 @@ return packer.startup(function(use)
 		requires = "kyazdani42/nvim-web-devicons",
 	})
 	use("tomlion/vim-solidity")
+  use("stevearc/aerial.nvim")
 
 	-- Colorschemes
 	-- use "lunarvim/colorschemes" -- A bunch of colorschemes you can try out
