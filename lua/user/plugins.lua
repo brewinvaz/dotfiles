@@ -60,7 +60,6 @@ return packer.startup(function(use)
   use("folke/which-key.nvim")
   use({ "scalameta/nvim-metals", requires = { "nvim-lua/plenary.nvim" } })
   use({ "ur4ltz/surround.nvim" })
-  use({ "wfxr/minimap.vim" })
 
   -- Trial plugins
   use({

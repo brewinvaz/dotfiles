@@ -28,7 +28,7 @@ We need to install python support (node is optional)
 
 ## Other dependencies
 
-1. code-minimap [Repo](https://github.com/wfxr/code-minimap)
+1. Install fzf-native for telescope
 
 ---
 
