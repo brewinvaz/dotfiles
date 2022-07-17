@@ -34,6 +34,11 @@ vim.cmd [[
     autocmd BufEnter,FocusGained,InsertLeave,WinEnter * if &nu && mode() != "i" | set rnu   | endif
     autocmd BufLeave,FocusLost,InsertEnter,WinLeave   * if &nu                  | set nornu | endif
   augroup END
+
+  augroup _scala
+    autocmd!
+    autocmd FileType scala,sbt lua require("metals").initialize_or_attach(metals_config)
+  augroup end
 ]]
 
 -- Autoformat

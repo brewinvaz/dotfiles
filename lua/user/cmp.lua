@@ -63,6 +63,7 @@ tabnine:setup({
     python = true,
     ruby = true,
     eruby = true,
+    scala = true,
   },
   show_prediction_strength = true,
 })
