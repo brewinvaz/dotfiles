@@ -12,7 +12,7 @@ telescope.setup({
     selection_caret = " ",
     -- path_display = { "smart" },
     path_display = { "absolute" },
-    file_ignore_patterns = { "node_modules" },
+    file_ignore_patterns = { "node_modules", ".git" },
 
     mappings = {
       i = {
