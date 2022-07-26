@@ -60,20 +60,19 @@ return packer.startup(function(use)
   use("folke/which-key.nvim")
   use({ "scalameta/nvim-metals", requires = { "nvim-lua/plenary.nvim" } })
   use({ "ur4ltz/surround.nvim" })
+  use({ "folke/trouble.nvim", requires = "kyazdani42/nvim-web-devicons" })
+  use("stevearc/aerial.nvim")
 
   -- Trial plugins
-  use({
-    "folke/trouble.nvim",
-    requires = "kyazdani42/nvim-web-devicons",
-  })
-  use("tomlion/vim-solidity")
-  use("stevearc/aerial.nvim")
+  -- use("tomlion/vim-solidity")
 
   -- Colorschemes
   -- use "lunarvim/colorschemes" -- A bunch of colorschemes you can try out
   -- use "lunarvim/darkplus.nvim"
   -- use "overcache/NeoSolarized"
-  use("arcticicestudio/nord-vim")
+  -- use "EdenEast/nightfox.nvim"
+  -- use 'folke/tokyonight.nvim'
+  use "arcticicestudio/nord-vim"
 
   -- cmp plugins
   use("hrsh7th/nvim-cmp") -- The completion plugin
