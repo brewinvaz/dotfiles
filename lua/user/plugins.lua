@@ -65,12 +65,13 @@ return packer.startup(function(use)
 
   -- Trial plugins
   -- use("tomlion/vim-solidity")
+  use("xiyaowong/nvim-transparent")
 
   -- Colorschemes
   -- use "lunarvim/colorschemes" -- A bunch of colorschemes you can try out
   -- use "lunarvim/darkplus.nvim"
   -- use "overcache/NeoSolarized"
-  -- use "EdenEast/nightfox.nvim"
+  use "EdenEast/nightfox.nvim"
   -- use 'folke/tokyonight.nvim'
   use "arcticicestudio/nord-vim"
 
@@ -100,6 +101,10 @@ return packer.startup(function(use)
   -- Telescope
   use("nvim-telescope/telescope.nvim")
   use({ "nvim-telescope/telescope-fzf-native.nvim", run = "make" })
+
+  -- FZF (Telescope live grep is too darn slow)
+  use({ "junegunn/fzf", run = "./install --bin" })
+  use({ "ibhagwan/fzf-lua", requires = "kyazdani42/nvim-web-devicons" })
 
   -- Treesitter
   use({ "nvim-treesitter/nvim-treesitter", run = ":TSUpdate" })

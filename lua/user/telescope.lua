@@ -101,4 +101,4 @@ telescope.setup({
 })
 
 -- load FZF native extension for faster searches
-require('telescope').load_extension('fzf')
+telescope.load_extension('fzf')

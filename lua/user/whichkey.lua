@@ -96,6 +96,15 @@ local mappings = {
   ["F"] = { "<cmd>Telescope live_grep theme=ivy<cr>", "Find Text" },
   ["P"] = { "<cmd>lua require('telescope').extensions.projects.projects()<cr>", "Projects" },
 
+  z = {
+    name = "Fzf-Lua",
+    ["b"] = { "<cmd>lua require('fzf-lua').lines()<cr>", "Open buffers" },
+    ["f"] = { "<cmd>lua require('fzf-lua').files()<cr>", "Find files", },
+    ["F"] = { "<cmd>lua require('fzf-lua').live_grep_glob()<cr>", "In files" },
+    ["w"] = { "<cmd>lua require('fzf-lua').grep_cword()<cr>", "Current word" },
+    ["W"] = { "<cmd>lua require('fzf-lua').grep_cWORD()<cr>", "Current WORD" },
+  },
+
   p = {
     name = "Packer",
     c = { "<cmd>PackerCompile<cr>", "Compile" },
