@@ -14,8 +14,8 @@ fzflua.setup({
     },
     on_create = function()
       local opts = { silent = true, noremap = true }
-      vim.api.nvim_buf_set_keymap(0, "t", "<C-n>", "<Down>", opts)
-      vim.api.nvim_buf_set_keymap(0, "t", "<C-p>", "<Up>", opts)
+      vim.api.nvim_buf_set_keymap(0, "t", "<C-j>", "<Down>", opts)
+      vim.api.nvim_buf_set_keymap(0, "t", "<C-k>", "<Up>", opts)
     end,
   },
 })
