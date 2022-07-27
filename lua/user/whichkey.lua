@@ -97,10 +97,11 @@ local mappings = {
   ["P"] = { "<cmd>lua require('telescope').extensions.projects.projects()<cr>", "Projects" },
 
   z = {
-    name = "Fzf-Lua",
+    name = "Fzf",
     ["b"] = { "<cmd>lua require('fzf-lua').lines()<cr>", "Open buffers" },
     ["f"] = { "<cmd>lua require('fzf-lua').files()<cr>", "Find files", },
     ["F"] = { "<cmd>lua require('fzf-lua').live_grep_glob()<cr>", "In files" },
+    ["l"] = { "<cmd>lua require('fzf-lua').grep_last()<cr>", "Grep last" },
     ["w"] = { "<cmd>lua require('fzf-lua').grep_cword()<cr>", "Current word" },
     ["W"] = { "<cmd>lua require('fzf-lua').grep_cWORD()<cr>", "Current WORD" },
   },
