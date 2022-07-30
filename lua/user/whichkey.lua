@@ -100,16 +100,6 @@ local mappings = {
   ["F"] = { "<cmd>lua require('fzf-lua').live_grep_glob()<cr>", "Find in files" },
   ["P"] = { "<cmd>lua require('telescope').extensions.projects.projects()<cr>", "Projects" },
 
-  z = {
-    name = "Fzf",
-    ["b"] = { "<cmd>lua require('fzf-lua').lines()<cr>", "Open buffers" },
-    ["f"] = { "<cmd>lua require('fzf-lua').files()<cr>", "Find files", },
-    ["F"] = { "<cmd>lua require('fzf-lua').live_grep_glob()<cr>", "In files" },
-    ["l"] = { "<cmd>lua require('fzf-lua').grep_last()<cr>", "Grep last" },
-    ["w"] = { "<cmd>lua require('fzf-lua').grep_cword()<cr>", "Current word" },
-    ["W"] = { "<cmd>lua require('fzf-lua').grep_cWORD()<cr>", "Current WORD" },
-  },
-
   p = {
     name = "Packer",
     c = { "<cmd>PackerCompile<cr>", "Compile" },
@@ -175,6 +165,7 @@ local mappings = {
       "Workspace Symbols",
     },
   },
+
   s = {
     name = "Search",
     b = { "<cmd>Telescope git_branches<cr>", "Checkout branch" },
@@ -185,6 +176,10 @@ local mappings = {
     R = { "<cmd>Telescope registers<cr>", "Registers" },
     k = { "<cmd>Telescope keymaps<cr>", "Keymaps" },
     C = { "<cmd>Telescope commands<cr>", "Commands" },
+    -- o = { "<cmd>lua require('fzf-lua').lines()<cr>", "Open buffers lines" },
+    l = { "<cmd>lua require('fzf-lua').grep_last()<cr>", "Grep last" },
+    w = { "<cmd>lua require('fzf-lua').grep_cword()<cr>", "Current word" },
+    W = { "<cmd>lua require('fzf-lua').grep_cWORD()<cr>", "Current WORD" },
   },
 
   t = {
