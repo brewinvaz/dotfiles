@@ -59,10 +59,10 @@ return packer.startup(function(use)
   use("antoinemadec/FixCursorHold.nvim") -- This is needed to fix lsp doc highlight
   use("folke/which-key.nvim")
   use({ "scalameta/nvim-metals", requires = { "nvim-lua/plenary.nvim" } })
-  use({ "ur4ltz/surround.nvim" })
+  use("ur4ltz/surround.nvim")
   use({ "folke/trouble.nvim", requires = "kyazdani42/nvim-web-devicons" })
   use("stevearc/aerial.nvim")
-
+  use("kevinhwang91/nvim-hlslens")
   -- Trial plugins
   -- use("tomlion/vim-solidity")
   use("xiyaowong/nvim-transparent")

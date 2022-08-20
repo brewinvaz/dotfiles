@@ -73,3 +73,11 @@ keymap("x", "<A-k>", ":move '<-2<CR>gv-gv", opts)
 -- Code --
 -- Range Formatting --
 keymap('v', 'lf', '<ESC><cmd>lua vim.lsp.buf.range_formatting()<CR>', {noremap = true})
+
+-- nvim-hlslens --
+keymap('n', 'n', [[<Cmd>execute('normal! ' . v:count1 . 'n')<CR><Cmd>lua require('hlslens').start()<CR>]], opts)
+keymap('n', 'N', [[<Cmd>execute('normal! ' . v:count1 . 'N')<CR><Cmd>lua require('hlslens').start()<CR>]], opts)
+keymap('n', '*', [[*<Cmd>lua require('hlslens').start()<CR>]], opts)
+keymap('n', '#', [[#<Cmd>lua require('hlslens').start()<CR>]], opts)
+keymap('n', 'g*', [[g*<Cmd>lua require('hlslens').start()<CR>]], opts)
+keymap('n', 'g#', [[g#<Cmd>lua require('hlslens').start()<CR>]], opts)
