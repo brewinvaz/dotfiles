@@ -17,10 +17,8 @@ bufferline.setup({
       icon = '▎',
     },
     buffer_close_icon = '',
-    -- buffer_close_icon = '',
     modified_icon = '●',
     close_icon = '',
-    -- close_icon = '',
     left_trunc_marker = '',
     right_trunc_marker = '',
     max_name_length = 30,
@@ -45,6 +43,12 @@ bufferline.setup({
   highlights = {
     fill = {
       bg = { attribute = 'bg', highlight = 'TabLine' },
+    },
+    buffer_visible = {
+      fg = { attribute = 'fg', highlight = 'fill' },
+    },
+    close_button_visible = {
+      fg = { attribute = 'fg', highlight = 'fill' },
     },
     tab_close = {
       bg = { attribute = 'bg', highlight = 'TabLine' },
