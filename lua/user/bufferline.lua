@@ -50,21 +50,6 @@ bufferline.setup({
     close_button_visible = {
       fg = { attribute = 'fg', highlight = 'fill' },
     },
-    diagnostic_visible = {
-      fg = { attribute = 'fg', highlight = 'diagnostic' },
-    },
-    error_visible = {
-      fg = { attribute = 'fg', highlight = 'error' },
-    },
-    error_selected = {
-      fg = { attribute = 'fg', highlight = 'error' },
-    },
-    error_diagnostic_visible = {
-      fg = { attribute = 'fg', highlight = 'error' },
-    },
-    error_diagnostic_selected = {
-      fg = { attribute = 'fg', highlight = 'error' },
-    },
     tab_close = {
       bg = { attribute = 'bg', highlight = 'TabLine' },
     },
