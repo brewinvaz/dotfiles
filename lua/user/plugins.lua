@@ -67,6 +67,12 @@ return packer.startup(function(use)
   require("scrollbar").setup()
   require("scrollbar.handlers.search").setup()
   use("joukevandermaas/vim-ember-hbs")
+  use({"folke/todo-comments.nvim",
+    requires = "nvim-lua/plenary.nvim",
+    config = function()
+      require("todo-comments").setup {}
+    end
+    })
 
   -- Trial plugins
   -- use("tomlion/vim-solidity")
