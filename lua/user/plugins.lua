@@ -63,6 +63,10 @@ return packer.startup(function(use)
   use({ "folke/trouble.nvim", requires = "kyazdani42/nvim-web-devicons" })
   use("stevearc/aerial.nvim")
   use("kevinhwang91/nvim-hlslens")
+  use("petertriho/nvim-scrollbar")
+  require("scrollbar").setup()
+  require("scrollbar.handlers.search").setup()
+
   -- Trial plugins
   -- use("tomlion/vim-solidity")
   use("xiyaowong/nvim-transparent")
