@@ -77,7 +77,7 @@ return packer.startup(function(use)
   -- use "overcache/NeoSolarized"
   use "EdenEast/nightfox.nvim"
   -- use 'folke/tokyonight.nvim'
-  use "arcticicestudio/nord-vim"
+  --[[ use "arcticicestudio/nord-vim" ]]
 
   -- cmp plugins
   use("hrsh7th/nvim-cmp") -- The completion plugin
