@@ -66,6 +66,7 @@ return packer.startup(function(use)
   use("petertriho/nvim-scrollbar")
   require("scrollbar").setup()
   require("scrollbar.handlers.search").setup()
+  use("joukevandermaas/vim-ember-hbs")
 
   -- Trial plugins
   -- use("tomlion/vim-solidity")
