@@ -39,6 +39,11 @@ vim.cmd [[
     autocmd!
     autocmd FileType scala,sbt lua require("metals").initialize_or_attach(metals_config)
   augroup end
+
+  augroup _rabl
+    autocmd!
+    autocmd BufRead,BufNewFile *.rabl setf ruby
+  augroup end
 ]]
 
 -- Autoformat
