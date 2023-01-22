@@ -73,6 +73,7 @@ return packer.startup(function(use)
       require("todo-comments").setup {}
     end
     })
+  use("norcalli/nvim-colorizer.lua");
 
   -- Trial plugins
   -- use("tomlion/vim-solidity")
