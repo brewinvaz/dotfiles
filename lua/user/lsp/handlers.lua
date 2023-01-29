@@ -84,7 +84,7 @@ local function lsp_keymaps(bufnr)
 end
 
 local function lsp_symbols(client, bufnr)
-  require("aerial").on_attach(client, bufnr)
+  --[[ require("aerial").on_attach(client, bufnr) ]]
 end
 
 M.on_attach = function(client, bufnr)
