@@ -77,7 +77,6 @@ return packer.startup(function(use)
 
   -- Trial plugins
   -- use("tomlion/vim-solidity")
-  use("xiyaowong/nvim-transparent")
 
   -- Colorschemes
   -- use "lunarvim/colorschemes" -- A bunch of colorschemes you can try out
