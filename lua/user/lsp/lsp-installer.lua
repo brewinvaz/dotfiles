@@ -15,6 +15,9 @@ local opts = {
 
 -- Explicity register each lsp server
 -- Install each lsp servr using `npm i -g <lsp server package name`
+local cssls_opts = require("user.lsp.settings.cssls")
+cssls_opts = vim.tbl_deep_extend("force", cssls_opts, opts)
+lspconfig.cssls.setup(cssls_opts)
 
 local emmet_ls_opts = require("user.lsp.settings.emmet_ls")
 emmet_ls_opts = vim.tbl_deep_extend("force", emmet_ls_opts, opts)
@@ -28,15 +31,17 @@ local jsonls_opts = require("user.lsp.settings.jsonls")
 jsonls_opts = vim.tbl_deep_extend("force", jsonls_opts, opts)
 lspconfig.jsonls.setup(jsonls_opts)
 
+local lua_ls_opts = require("user.lsp.settings.lua_ls")
+lua_ls_opts = vim.tbl_deep_extend("force", lua_ls_opts, opts)
+lspconfig.lua_ls.setup(lua_ls_opts)
+
 local pyright_opts = require("user.lsp.settings.pyright")
 pyright_opts = vim.tbl_deep_extend("force", pyright_opts, opts)
 lspconfig.pyright.setup(pyright_opts)
 
-lspconfig.cssls.setup(opts)
 lspconfig.cssmodules_ls.setup(opts)
 lspconfig.eslint.setup(opts)
 lspconfig.graphql.setup(opts)
-lspconfig.lua_ls.setup(opts)
 lspconfig.tailwindcss.setup(opts)
 lspconfig.tsserver.setup(opts)
 
