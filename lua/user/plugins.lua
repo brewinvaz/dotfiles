@@ -120,7 +120,7 @@ return packer.startup(function(use)
   -- Treesitter
   use({ "nvim-treesitter/nvim-treesitter", run = ":TSUpdate" })
   use("JoosepAlviste/nvim-ts-context-commentstring")
-  use("p00f/nvim-ts-rainbow")
+  use("HiPhish/nvim-ts-rainbow2")
 
   -- Git
   use("lewis6991/gitsigns.nvim")
