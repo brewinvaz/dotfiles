@@ -14,7 +14,12 @@ local opts = {
 }
 
 -- Explicity register each lsp server
--- Install each lsp servr using `npm i -g <lsp server package name`
+-- Install each lsp server using `npm i -g <lsp server package name`
+
+-- Exceptions:
+-- Lua LS - `brew install lua-language-server`
+-- Eslint - `npm i -g vscode-langservers-extracted`
+
 local cssls_opts = require("user.lsp.settings.cssls")
 cssls_opts = vim.tbl_deep_extend("force", cssls_opts, opts)
 lspconfig.cssls.setup(cssls_opts)
