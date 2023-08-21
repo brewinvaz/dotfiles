@@ -88,8 +88,7 @@ local mappings = {
   ["e"] = { "<cmd>NvimTreeToggle<cr>", "Explorer" },
   ["w"] = { "<cmd>w!<CR>", "Save" },
   ["q"] = { "<cmd>q!<CR>", "Quit" },
-  --[[ ["c"] = { "<cmd>Bdelete!<CR>", "Close Buffer" }, ]]
-  ["c"] = { "<cmd>bdelete!<CR>", "Close Buffer" },
+  ["c"] = { "<cmd>Bdelete!<CR>", "Close Buffer" },
   ["h"] = { "<cmd>nohlsearch<CR>", "No Highlight" },
   -- Remove telescope till search becomes more performant
   -- ["f"] = {

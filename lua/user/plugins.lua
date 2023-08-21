@@ -50,7 +50,7 @@ return packer.startup(function(use)
   use("nvim-tree/nvim-web-devicons")
   use("nvim-tree/nvim-tree.lua")
   use({ "akinsho/bufferline.nvim", tag = "*" })
-  --[[ use("moll/vim-bbye") ]] -- Doesn't work property with Neovim 0.9
+  use('famiu/bufdelete.nvim')
   use("nvim-lualine/lualine.nvim")
   use({ "akinsho/toggleterm.nvim", tag = "*" })
   use("ahmedkhalf/project.nvim")
