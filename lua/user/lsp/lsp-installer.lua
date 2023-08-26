@@ -47,6 +47,7 @@ lspconfig.pyright.setup(pyright_opts)
 lspconfig.cssmodules_ls.setup(opts)
 lspconfig.eslint.setup(opts)
 lspconfig.graphql.setup(opts)
+lspconfig.prismals.setup(opts)
 lspconfig.tailwindcss.setup(opts)
 lspconfig.tsserver.setup(opts)
 
