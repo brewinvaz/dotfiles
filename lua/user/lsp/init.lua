@@ -5,6 +5,7 @@ end
 
 require("user.lsp.settings.metals")
 require("user.lsp.lsp-installer")
+require("user.lsp.mason-lsp-installer")
 require("user.lsp.handlers").setup()
 require("user.lsp.null-ls")
 require("aerial").setup()
