@@ -76,7 +76,6 @@ nvim_tree.setup({
   },
   view = {
     width = 35,
-    hide_root_folder = false,
     side = "left",
     number = true,
     relativenumber = true,
@@ -92,6 +91,7 @@ nvim_tree.setup({
   },
   renderer = {
     group_empty = true,
+    root_folder_label = true,
     full_name = true,
     icons = {
       glyphs = {
