@@ -8,11 +8,6 @@ if not snip_status_ok then
 	return
 end
 
-local tabnine_status_ok, tabnine = pcall(require, "cmp_tabnine.config")
-if not tabnine_status_ok then
-	return
-end
-
 require("luasnip/loaders/from_vscode").lazy_load()
 
 local check_backspace = function()
@@ -49,24 +44,6 @@ local kind_icons = {
 	TypeParameter = "",
 }
 -- find more here: https://www.nerdfonts.com/cheat-sheet
-
-tabnine:setup({
-	max_lines = 1000,
-	max_num_results = 20,
-	sort = true,
-	run_on_every_keystroke = true,
-	snippet_placeholder = "..",
-	ignored_file_types = { -- default is not to ignore
-		-- uncomment to ignore in lua:
-		-- lua = true
-		elixir = true,
-		python = true,
-		ruby = true,
-		eruby = true,
-		scala = true,
-	},
-	show_prediction_strength = true,
-})
 
 cmp.setup({
 	snippet = {
@@ -125,18 +102,10 @@ cmp.setup({
 			-- vim_item.kind = string.format('%s %s', kind_icons[vim_item.kind], vim_item.kind) -- This concatonates the icons with the name of the item kind
 			local menu = ({
 				nvim_lsp = "[LSP]",
-				cmp_tabnine = "[Tabnine]",
 				luasnip = "[Snippet]",
 				buffer = "[Buffer]",
 				path = "[Path]",
 			})[entry.source.name]
-
-			if entry.source.name == "cmp_tabnine" then
-				if entry.completion_item.data ~= nil and entry.completion_item.data.detail ~= nil then
-					menu = entry.completion_item.data.detail .. " " .. menu
-				end
-				vim_item.kind = ""
-			end
 
 			vim_item.menu = menu
 
@@ -146,7 +115,6 @@ cmp.setup({
 	sources = {
 		{ name = "nvim_lsp", priority = 1000 },
 		{ name = "luasnip", priority = 800 },
-		{ name = "cmp_tabnine", priority = 600 },
 		{ name = "buffer", priority = 400 },
 		{ name = "path", priority = 200 },
 	},
