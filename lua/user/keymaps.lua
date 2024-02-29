@@ -81,3 +81,6 @@ keymap('n', '*', [[*<Cmd>lua require('hlslens').start()<CR>]], opts)
 keymap('n', '#', [[#<Cmd>lua require('hlslens').start()<CR>]], opts)
 keymap('n', 'g*', [[g*<Cmd>lua require('hlslens').start()<CR>]], opts)
 keymap('n', 'g#', [[g#<Cmd>lua require('hlslens').start()<CR>]], opts)
+
+-- Markdown Previews --
+keymap("n", "<C-s>", ":MarkdownPreview<CR>", opts)

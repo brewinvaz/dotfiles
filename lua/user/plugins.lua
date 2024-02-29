@@ -43,10 +43,10 @@ return packer.startup(function(use)
   -- My plugins here
   use("lewis6991/impatient.nvim")
   use("wbthomason/packer.nvim") -- Have packer manage itself
-  use("nvim-lua/popup.nvim")   -- An implementation of the Popup API from vim in Neovim
-  use("nvim-lua/plenary.nvim") -- Useful lua functions used ny lots of plugins
-  use("windwp/nvim-autopairs") -- Autopairs, integrates with both cmp and treesitter
-  use("numToStr/Comment.nvim") -- Easily comment stuff
+  use("nvim-lua/popup.nvim")    -- An implementation of the Popup API from vim in Neovim
+  use("nvim-lua/plenary.nvim")  -- Useful lua functions used ny lots of plugins
+  use("windwp/nvim-autopairs")  -- Autopairs, integrates with both cmp and treesitter
+  use("numToStr/Comment.nvim")  -- Easily comment stuff
   use("nvim-tree/nvim-web-devicons")
   use("nvim-tree/nvim-tree.lua")
   use({ "akinsho/bufferline.nvim", tag = "*" })
@@ -88,16 +88,16 @@ return packer.startup(function(use)
   --[[ use "arcticicestudio/nord-vim" ]]
 
   -- cmp plugins
-  use("hrsh7th/nvim-cmp")                                 -- The completion plugin
-  use("hrsh7th/cmp-buffer")                               -- buffer completions
-  use("hrsh7th/cmp-path")                                 -- path completions
-  use("hrsh7th/cmp-cmdline")                              -- cmdline completions
-  use("saadparwaiz1/cmp_luasnip")                         -- snippet completions
+  use("hrsh7th/nvim-cmp")                                  -- The completion plugin
+  use("hrsh7th/cmp-buffer")                                -- buffer completions
+  use("hrsh7th/cmp-path")                                  -- path completions
+  use("hrsh7th/cmp-cmdline")                               -- cmdline completions
+  use("saadparwaiz1/cmp_luasnip")                          -- snippet completions
   use("hrsh7th/cmp-nvim-lsp")
   use({ "codota/tabnine-nvim", run = "./dl_binaries.sh" }) -- tabnine AI completions
 
   -- Snippets
-  use("L3MON4D3/LuaSnip")            --snippet engine
+  use("L3MON4D3/LuaSnip")             --snippet engine
   use("rafamadriz/friendly-snippets") -- a bunch of snippets to use
 
   -- LSP
@@ -105,9 +105,9 @@ return packer.startup(function(use)
     "williamboman/mason.nvim", -- enhanced LSP server management
     "williamboman/mason-lspconfig.nvim",
   })
-  use("neovim/nvim-lspconfig")          -- enable LSP
+  use("neovim/nvim-lspconfig")           -- enable LSP
   use("williamboman/nvim-lsp-installer") -- simple to use language server installer
-  use("tamago324/nlsp-settings.nvim")   -- language server settings defined in json for
+  use("tamago324/nlsp-settings.nvim")    -- language server settings defined in json for
   use("jose-elias-alvarez/null-ls.nvim") -- for formatters and linters
 
   -- Telescope
@@ -128,6 +128,12 @@ return packer.startup(function(use)
 
   -- Debugger
   use("mfussenegger/nvim-dap")
+
+  -- Markdown
+  use({
+    "iamcco/markdown-preview.nvim",
+    run = function() vim.fn["mkdp#util#install"]() end,
+  })
 
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins
