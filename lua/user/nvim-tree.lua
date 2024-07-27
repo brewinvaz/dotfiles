@@ -91,7 +91,7 @@ nvim_tree.setup({
   },
   renderer = {
     group_empty = true,
-    root_folder_label = true,
+    root_folder_label = false,
     full_name = true,
     icons = {
       glyphs = {
