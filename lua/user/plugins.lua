@@ -124,7 +124,7 @@ return packer.startup(function(use)
 	use("HiPhish/nvim-ts-rainbow2")
 
 	-- Git
-	--[[ use("lewis6991/gitsigns.nvim") ]]
+	use("lewis6991/gitsigns.nvim")
 
 	-- Debugger
 	use("mfussenegger/nvim-dap")
