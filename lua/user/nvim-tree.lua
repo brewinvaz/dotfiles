@@ -27,7 +27,6 @@ end
 -- following options are being migrated to the setup function incrementally
 -- please check https://github.com/kyazdani42/nvim-tree.lua/blob/master/README.md
 vim.g.git_hl = 1
-vim.g.root_folder_modifier = ":t"
 vim.g.show_icons = {
   git = 1,
   folders = 1,
@@ -91,8 +90,8 @@ nvim_tree.setup({
   },
   renderer = {
     group_empty = true,
-    root_folder_label = false,
     full_name = true,
+    root_folder_modifier = ":t",
     icons = {
       glyphs = {
         default = "",
