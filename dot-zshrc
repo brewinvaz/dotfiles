@@ -121,6 +121,8 @@ export NNN_FIFO="/tmp/nnn.fifo"
 
 # Set up fzf key bindings and fuzzy completion
 source <(fzf --zsh)
+alias fzfnv='nvim  $(fzf -m --preview="bat --color=always {}")'
+export BAT_THEME="Nord"
 
 # NVM setup
 export NVM_DIR="$HOME/.nvm"
